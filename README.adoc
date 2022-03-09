@@ -34,7 +34,32 @@ build=true
 
 Under development.  _mvnconfig_ is in early stages of development.  It will currently generate configurations for NetBeans, IntelliJ, and VSCode only - and the syntax is still in flux.
 
+== Installation
+
+Installation requires that you have a recent version of _npm_ installed, which comes bundled with NodeJS, which can be downloaded https://nodejs.org/en/download/[here].
+
+Run the following command.  (NOTE:  Will require `sudo` on Mac and Linux).
+
+[source,listing]
+----
+npm install -g mvnconfig
+----
+
 == Usage
+
+CLI usage instructions can be found by simply running `mvnconfig` with no parameters:
+
+[source,listing]
+----
+Usage: mvnconfig [-hV] [-f=<mvnConfigFile>] -i=<ide> <projectDirectory>
+      <projectDirectory>   Target Project directory
+  -f, --mvnconfig=<mvnConfigFile>
+                           Path to mvnconfig.toml file
+  -h, --help               Show this help message and exit.
+  -i, --ide=<ide>          Output options: IntelliJ, NetBeans, Eclipse, VSCode
+----
+
+If `<projectDirectory>` is omitted, it will default to the current working directory.
 
 For the purpose of the following example usages, let's begin by generating a simple JavaFX project using its archetype.
 
@@ -148,4 +173,6 @@ group::
 Optional string with a "group" label that can be used to group multiple commands together.  On IntelliJ this will create a folder for the group in the _Run Configurations_ menu.  On NetBeans and VSCode, the group will be prefixed to the menu label for the task.
 
 
+== Credits
 
+Created by https://sjhannah.com[Steve Hannah]
