@@ -1,0 +1,3 @@
+PROJECT_DIR="$SCRIPTPATH/../../.."
+TARGET_DIR="$PROJECT_DIR/target"
+MVNCONFIG="$JAVA_HOME/bin/java -jar $TARGET_DIR/mvnconfig-1.0-SNAPSHOT.jar"

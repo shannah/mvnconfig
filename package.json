@@ -1,0 +1,24 @@
+{
+    "bin": {"mvnconfig": "jdeploy-bundle/jdeploy.js"},
+    "author": "Steve Hannah",
+    "description": "A developer-friendly tool for integrating Maven projects into IDEs.",
+    "main": "index.js",
+    "preferGlobal": true,
+    "repository": "",
+    "version": "0.0.1",
+    "jdeploy": {
+        "jdk": false,
+        "javaVersion": "11",
+        "jar": "target/mvnconfig-1.0-SNAPSHOT.jar",
+        "javafx": false,
+        "title": "Mvnconfig"
+    },
+    "dependencies": {
+        "njre": "^0.2.0",
+        "shelljs": "^0.8.4"
+    },
+    "license": "ISC",
+    "name": "mvnconfig",
+    "files": ["jdeploy-bundle"],
+    "scripts": {"test": "echo \"Error: no test specified\" && exit 1"}
+}
