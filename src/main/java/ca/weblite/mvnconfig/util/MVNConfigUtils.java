@@ -7,6 +7,7 @@ public class MVNConfigUtils {
                 "mvnw".equalsIgnoreCase(arg) ||
                 "$mvn$".equalsIgnoreCase(arg) ||
                 "$mvn".equalsIgnoreCase(arg) ||
+                "$mvnw".equalsIgnoreCase(arg) ||
                 lcarg.endsWith("/mvn") ||
                 lcarg.endsWith("/mvnw") ||
                 lcarg.endsWith("\\mvn") ||

@@ -76,4 +76,6 @@ public class ProjectTastTest {
         Assertions.assertArrayEquals(new String[]{"bar"}, disabledProfiles.toArray(new String[1]));
 
     }
+
+
 }
